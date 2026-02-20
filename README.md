@@ -1,24 +1,31 @@
 # 🎓 AI/ML Learning Hub
 
-A comprehensive mobile learning platform for Python, AI & Machine Learning.
+A comprehensive mobile learning platform for Python, AI & Machine Learning built with React Native Expo.
 
 ## 🚀 Deploy to GitHub Pages
 
-### Quick Setup
+### Step 1: Push to GitHub
 
-1. **Fork or push this repo to GitHub**
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
+```
 
-2. **Enable GitHub Pages:**
-   - Go to Settings → Pages
-   - Source: Select "GitHub Actions"
-   - Save
+### Step 2: Enable GitHub Pages
 
-3. **Push to main branch** - deployment starts automatically
+1. Go to repository **Settings** → **Pages**
+2. Under **Source**: Select **GitHub Actions**
+3. Save
 
-4. **Access your app at:**
-   ```
-   https://YOUR_USERNAME.github.io/YOUR_REPO/
-   ```
+### Step 3: Access Your App
+
+Your app will be live at:
+```
+https://YOUR_USERNAME.github.io/YOUR_REPO/
+```
 
 ---
 
@@ -29,44 +36,50 @@ A comprehensive mobile learning platform for Python, AI & Machine Learning.
 npm install
 
 # Start development server
-npx expo start
+npm start
 
 # Press 'w' for web, 'a' for Android, 'i' for iOS
+
+# Or build for web
+npm run build:web
 ```
 
 ---
 
 ## 📱 Features
 
-| Feature | Description |
-|---------|-------------|
-| 🐍 Python Course | 48h, 10+ lessons |
-| 🤖 ML Fundamentals | 36h, 4+ lessons |
-| 🧠 Deep Learning | 44h, 1+ lessons |
-| 📊 Progress Tracking | AsyncStorage |
-| 🎨 Dark Theme | Modern UI |
+| Course | Duration | Level |
+|--------|----------|-------|
+| 🐍 Python Masterclass | 48h | Beginner |
+| 🤖 ML Fundamentals | 36h | Intermediate |
+| 🧠 Deep Learning | 44h | Advanced |
+
+- ✅ Expandable course modules
+- ✅ Progress tracking (saved locally)
+- ✅ Code examples with syntax
+- ✅ Dark theme UI
+- ✅ Cross-platform (iOS, Android, Web)
 
 ---
 
 ## 🔧 Troubleshooting
 
-### 404 Error on GitHub Pages?
+### Blank page on GitHub Pages?
 
-1. **Wait 2-3 minutes** - GitHub Pages takes time to deploy
-2. **Check Actions tab** - Look for build errors
-3. **Verify Settings** - Pages source must be "GitHub Actions"
+1. Wait 2-3 minutes for deployment
+2. Check the **Actions** tab for errors
+3. Make sure Pages source is **GitHub Actions**
 
-### Local not working?
+### Local build issues?
 
 ```bash
-# Clear cache and reinstall
 rm -rf node_modules package-lock.json
 npm install
-npx expo start --clear
+npm start -- --clear
 ```
 
 ---
 
 ## 📄 License
 
-MIT License
+MIT
