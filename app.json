@@ -29,3 +29,15 @@
     "platforms": ["ios", "android", "web"]
   }
 }
+
+{
+  "expo": {
+    "name": "AI/ML Learning Hub",
+    "slug": "ai-ml-learning-hub",
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    }
+  }
+}
