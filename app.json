@@ -4,13 +4,17 @@
     "slug": "aiml-learning-hub",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#0f172a"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.aiml.learninghub",
@@ -26,18 +30,10 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [],
-    "platforms": ["ios", "android", "web"]
-  }
-}
-
-{
-  "expo": {
-    "name": "AI/ML Learning Hub",
-    "slug": "ai-ml-learning-hub",
-    "platforms": ["ios", "android", "web"],
-    "web": {
-      "bundler": "metro",
-      "output": "static"
-    }
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
   }
 }

@@ -1,31 +1,42 @@
 # 🎓 AI/ML Learning Hub
 
-A comprehensive mobile learning platform for Python, AI & Machine Learning built with React Native Expo.
+A high-performance, mobile-first learning platform for Python, AI, and Machine Learning. Built with React Native & Expo.
 
-## 🚀 Deploy to GitHub Pages
+## ✨ Features
 
-### Step 1: Push to GitHub
+- **Rich Curriculum**: 100+ modules covering everything from basic Python to advanced Neural Networks.
+- **Progress Tracking**: Automatic local save of your learning progress.
+- **Interactive Content**: Code examples, lessons, and quizzes.
+- **Premium Design**: Modern sleek dark UI with smooth transitions.
+- **Universal**: Deploy to Web, Android, and iOS.
 
+---
+
+## 🚀 Production Deployment
+
+### Option 1: Vercel (Recommended)
+
+This project is pre-configured for **Vercel** zero-config deployment.
+
+1.  Connect your GitHub repository to [Vercel](https://vercel.com).
+2.  Vercel will automatically detect the `vercel.json` file.
+3.  Deploy! Vercel handles the build process using the `npm run build` command.
+
+**Manual Build:**
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-git push -u origin main
+npm run build
+# The production-ready files will be in the 'dist' directory.
 ```
 
-### Step 2: Enable GitHub Pages
+### Option 2: GoDaddy (or other Shared Hosting)
 
-1. Go to repository **Settings** → **Pages**
-2. Under **Source**: Select **GitHub Actions**
-3. Save
-
-### Step 3: Access Your App
-
-Your app will be live at:
-```
-https://YOUR_USERNAME.github.io/YOUR_REPO/
-```
+1.  Run the build command locally:
+    ```bash
+    npm run build
+    ```
+2.  Compress the contents of the `dist` folder into a `.zip` file.
+3.  Upload the `.zip` file to your GoDaddy **File Manager** (usually in `/public_html`).
+4.  Extract the files directly into the root.
 
 ---
 
@@ -35,51 +46,19 @@ https://YOUR_USERNAME.github.io/YOUR_REPO/
 # Install dependencies
 npm install
 
-# Start development server
+# Start the Hub
 npm start
-
-# Press 'w' for web, 'a' for Android, 'i' for iOS
-
-# Or build for web
-npm run build:web
+# Press 'w' for web view
 ```
 
----
+## 🔧 Architecture
 
-## 📱 Features
-
-| Course | Duration | Level |
-|--------|----------|-------|
-| 🐍 Python Masterclass | 48h | Beginner |
-| 🤖 ML Fundamentals | 36h | Intermediate |
-| 🧠 Deep Learning | 44h | Advanced |
-
-- ✅ Expandable course modules
-- ✅ Progress tracking (saved locally)
-- ✅ Code examples with syntax
-- ✅ Dark theme UI
-- ✅ Cross-platform (iOS, Android, Web)
-
----
-
-## 🔧 Troubleshooting
-
-### Blank page on GitHub Pages?
-
-1. Wait 2-3 minutes for deployment
-2. Check the **Actions** tab for errors
-3. Make sure Pages source is **GitHub Actions**
-
-### Local build issues?
-
-```bash
-rm -rf node_modules package-lock.json
-npm install
-npm start -- --clear
-```
+- **Framework**: Expo SDK 51
+- **State Management**: Zustand (with Persistence)
+- **Navigation**: React Navigation (Bottom Tabs + Native Stack)
+- **Styling**: React Native StyleSheet (Platform-independent)
 
 ---
 
 ## 📄 License
-
 MIT
